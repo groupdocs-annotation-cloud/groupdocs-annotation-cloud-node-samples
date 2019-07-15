@@ -1,0 +1,12 @@
+{
+	"name": "group-docs.annotation.cloud.node.examples",
+	"version": "0.0.0",
+	"description": "GroupDocs.Annotation.Cloud.Node.Examples",
+	"main": "app.js",
+	"author": {
+		"name": ""
+	},
+	"dependencies": {
+		"groupdocs-annotation-cloud": "^19.5.0"
+	}
+}
