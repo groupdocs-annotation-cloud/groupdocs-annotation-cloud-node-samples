@@ -30,7 +30,7 @@ global.folderApi = groupdocs_annotation_cloud_1.FolderApi.fromKeys(appSid, appKe
 // construct FileApi
 global.fileApi = groupdocs_annotation_cloud_1.FileApi.fromKeys(appSid, appKey);
 
-//// Uploading sample test files from local to storage under folder 'annotations'
+//// Uploading sample test files from local to storage under folder 'Annotationdocs'
 //console.log("Executing Upload Test Files...");
 //require('./Common_Utilities/Utils').Upload_Test_File();
 
@@ -100,7 +100,7 @@ console.log("*** Executing examples...");
 //// ***********************************************************
 
 // Get All Supported Formats
-//require('./Supported_File_Formats/Annotation_Node_Get_All_Supported_Formats').Run();
+require('./Supported_File_Formats/Annotation_Node_Get_All_Supported_Formats').Run();
 
 //// ***********************************************************
 //// ***** WORKING WITH DOCUMENT INFORMATION *****
@@ -114,8 +114,44 @@ console.log("*** Executing examples...");
 //// ***** WORKING WITH ANNOTATIONS *****
 //// ***********************************************************
 
-////Add annotation
-//require('./Working_With_Annotations/Annotation_Node_Add_Annotation').Run();
+// Post/Add multiple annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_Multiple_Annotations').Run();
+
+// Post/Add Area annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_Area_Annotation').Run();
+
+// Post/Add Distance annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_Distance_Annotation').Run();
+
+// Post/Add Polyline annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_Polyline_Annotation').Run();
+
+// Post/Add Watermark annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_Watermark_Annotation').Run();
+
+// Post/Add Point annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_Point_Annotation').Run();
+
+// Post/Add Text annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_Text_Annotation').Run();
+
+// Post/Add Text Field annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_TextField_Annotation').Run();
+
+// Post/Add Text Replacement annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_TextReplacement_Annotation').Run();
+
+// Post/Add Text Redaction annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_TextRedaction_Annotation').Run();
+
+// Post/Add Text Underline annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_TextUnderline_Annotation').Run();
+
+// Post/Add Text Underline annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_TextUnderline_Annotation').Run();
+
+// Post/Add Text Strikeout annotations
+//require('./Working_With_Annotations/Annotation_Node_Add_TextStrikeout_Annotation').Run();
 
 //Get annotations
 //require('./Working_With_Annotations/Annotation_Node_Get_Annotation').Run();

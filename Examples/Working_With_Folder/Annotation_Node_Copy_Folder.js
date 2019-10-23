@@ -5,7 +5,7 @@ class Annotation_Node_Copy_Folder {
 		var request = new groupdocs_annotation_cloud_1.CopyFolderRequest("annotations", "annotations1", myStorage, myStorage);
 		folderApi.copyFolder(request)
 			.then(function () {
-				console.log("Expected response type is Void: 'annotations' folder copied as 'annotations1'.");
+				console.log("Expected response type is Void: 'Annotationdocs' folder copied as 'Annotationdocs1'.");
 			})
 			.catch(function (error) {
 				console.log("Error: " + error.message);

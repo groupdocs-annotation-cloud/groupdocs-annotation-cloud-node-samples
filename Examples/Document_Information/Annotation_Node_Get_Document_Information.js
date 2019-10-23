@@ -2,7 +2,7 @@
 class Annotation_Node_Get_Document_Information {
 	static Run() {
 
-		var request = new groupdocs_annotation_cloud_1.GetInfoRequest("annotations\\one-page.docx", "");
+		var request = new groupdocs_annotation_cloud_1.GetInfoRequest("Annotationdocs\\one-page.docx", "");
 
 		infoApi.getInfo(request)
 			.then(function (response) {

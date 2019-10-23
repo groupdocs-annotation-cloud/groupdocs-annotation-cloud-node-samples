@@ -1,12 +1,12 @@
 "use strict";
 class Utils {
 	static Upload_Test_File() {
-		var resourcesFolder = './Resources/annotations/';
+		var resourcesFolder = './Resources/Annotationdocs/';
 
 		fs.readdir(resourcesFolder, (err, files) => {
-			console.log("Total files in 'Annotations' folder: " + files.length);
+			console.log("Total files in 'Annotationdocs' folder: " + files.length);
 			files.forEach(file => {
-				var srcFilePath = "annotations/" + file;
+				var srcFilePath = "Annotationdocs/" + file;
 				var existsRequest = new groupdocs_annotation_cloud_1.ObjectExistsRequest(srcFilePath, myStorage);
 				//console.log("srcFilePath: " + srcFilePath);
 				storageApi.objectExists(existsRequest)
