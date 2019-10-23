@@ -1,7 +1,7 @@
 "use strict";
 class Annotation_Node_Get_PDF {
 	static Run() {
-		var request = new groupdocs_annotation_cloud_1.GetPdfRequest("annotations\\ten-pages.docx");
+		var request = new groupdocs_annotation_cloud_1.GetPdfRequest("Annotationdocs\\ten-pages.docx");
 		annotateApi.getPdf(request)
 			.then(function (response) {
 				console.log("Expected response type is File: " + response.length);
