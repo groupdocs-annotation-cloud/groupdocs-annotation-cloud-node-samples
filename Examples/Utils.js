@@ -17,6 +17,7 @@ class Utils {
 
 	static async UploadTestFiles()
 	{
+		await this.UploadTestFile("annotationdocs/input.docx");
 		await this.UploadTestFile("annotationdocs/one-page.docx");
 		await this.UploadTestFile("annotationdocs/one-page-password.docx");
 		await this.UploadTestFile("annotationdocs/ten-pages.docx");

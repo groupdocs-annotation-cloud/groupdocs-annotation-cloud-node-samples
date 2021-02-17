@@ -3,11 +3,13 @@
 	"version": "1.0.0",
 	"description": "GroupDocs.Annotation.Cloud.Node.Examples",
 	"main": "app.js",
+	"repository": "https://github.com/groupdocs-annotation-cloud/groupdocs-annotation-cloud-node-samples",
+	"license": "MIT",
 	"author": {
 		"name": "GroupDocs Product Team"
 	},
 	"dependencies": {
-		"groupdocs-annotation-cloud": "^20.10.0"
+		"groupdocs-annotation-cloud": "file:../../../GitLab/NodejsSdk/src"
 	},
 	"scripts": {
 		"start": "node RunExamples.js"

@@ -24,9 +24,15 @@ class AddTextReplacementAnnotation {
 		a1.textToReplace = "Text to replace";
 		a1.creatorName = "Anonym A.";
 
-		var request = new annotation_cloud.PostAnnotationsRequest("annotationdocs\\one-page.docx", [a1]);
-		await annotateApi.postAnnotations(request);
-		console.log("AddTextReplacementAnnotation: Text Replacement Annotation added.");
+		let fileInfo = new annotation_cloud.FileInfo();
+		fileInfo.filePath = "annotationdocs\\one-page.docx";
+		let options = new annotation_cloud.AnnotateOptions();
+		options.fileInfo = fileInfo;
+		options.annotations = [a1];
+		options.outputPath = "Output/output.docx";
+		let result = await annotateApi.annotate(new annotation_cloud.AnnotateRequest(options));
+		
+		console.log("AddTextReplacementAnnotation: Text Replacement Annotation added: " + result.href);
 	}
 }
 module.exports = AddTextReplacementAnnotation;

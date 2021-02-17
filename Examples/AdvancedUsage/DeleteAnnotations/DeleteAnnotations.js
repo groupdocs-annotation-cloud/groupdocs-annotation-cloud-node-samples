@@ -2,9 +2,17 @@
 
 class DeleteAnnotations {
 	static async Run() {
-		var request = new annotation_cloud.DeleteAnnotationsRequest("annotationdocs\\one-page.docx");
-		await annotateApi.deleteAnnotations(request)
-		console.log("DeleteAnnotations: annotations deleted.");
+		let fileInfo = new annotation_cloud.FileInfo();
+		fileInfo.filePath = "input\\input.docx";
+		let options = new annotation_cloud.RemoveOptions();
+		options.fileInfo = fileInfo;
+		options.annotationIds = [1, 2, 3];
+		options.outputPath = "Output/output.docx";
+
+		// Remove annotations
+		let result = await annotateApi.removeAnnotations(new annotation_cloud.RemoveAnnotationsRequest(options));
+
+		console.log("DeleteAnnotations: annotations delete: " + result.href);
 	}
 }
 module.exports = DeleteAnnotations;
