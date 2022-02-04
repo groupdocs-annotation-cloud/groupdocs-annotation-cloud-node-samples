@@ -54,6 +54,7 @@ async function examples() {
         await require('./AdvancedUsage/AddAnnotation/AddTextRedactionAnnotation').Run();
         await require('./AdvancedUsage/AddAnnotation/AddTextReplacementAnnotation').Run();
         await require('./AdvancedUsage/AddAnnotation/AddTextStrikeoutAnnotation').Run();
+        await require('./AdvancedUsage/AddAnnotation/AddSquigglyAnnotation').Run();
         await require('./AdvancedUsage/AddAnnotation/AddTextUnderlineAnnotation').Run();
         await require('./AdvancedUsage/AddAnnotation/AddWatermarkAnnotation').Run();
 
