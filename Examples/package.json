@@ -9,7 +9,7 @@
 		"name": "GroupDocs Product Team"
 	},
 	"dependencies": {
-		"groupdocs-annotation-cloud": "^23.12"
+		"groupdocs-annotation-cloud": "^25.7"
 	},
 	"scripts": {
 		"start": "node RunExamples.js"
